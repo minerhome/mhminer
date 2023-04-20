@@ -14,7 +14,7 @@ key: key.pem
 
 
 servers:
-  - name: IRON抽水
+  - name: IRON-英雄
     ip: 0.0.0.0:17650     # 给客人连接的端口, 一般前面固定为0.0.0.0
     ssl: true             # 给客人连接, 一般要开ssl
     coin: IRON            # 币种, 参数上面完成的
@@ -31,6 +31,22 @@ servers:
           ip: hk.ironfish.herominers.com:1145       #  这里填抽到哪个池
           ssl: false
           proxy: ""
+
+  - name: IRON-鱼池
+    ip: 0.0.0.0:17660     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    ssl: true             # 给客人连接, 一般要开ssl
+    coin: IRON            # 币种, 参数上面完成的
+    pool: # 实际代理矿池
+      ip: iron-asia.f2pool.com:1500
+      ssl: false
+      proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
+    devfee: # 可开多个抽水, 损耗会更大
+      - name: "小王"
+        worker_name: "devfee-1"
+        fee_percent: 3     # 3%
+        address: "viponedream"  #  改成你自己的钱包  鱼池要用挖矿帐号
+
+
 
   - name: RXD抽水
     ip: 0.0.0.0:10160     # 给客人连接的端口, 一般前面固定为0.0.0.0
