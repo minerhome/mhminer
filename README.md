@@ -8,7 +8,7 @@
 ### 证书可以自己提供也可以使用默认的.
 
 ### 支持币种 ironfish, rxd, cfx, kas, dnx
-
+### 待增加  etc, rvn, nexa, neox
 
 
 #### 2023-4-20  铁鱼ironfish, rxd, cfx, kas, dnx 写好了, 大家还需要什么请留言.
