@@ -1,10 +1,11 @@
 # mh_proxy
 挖矿抽水软件测试版  支持windows和ubuntu 20
+也可到群里下载, QQ群: 140777161
 
-# ubuntu使用下面的一键脚本, windows的可以直接下载使用, 只须一个配置文件, 请看config-sample.yml里面的写法, 然后把文件改名为config.yml即可.
-# 证书可以自己提供也可以使用默认的.
+### ubuntu使用下面的一键脚本, windows的可以直接下载使用, 只须一个配置文件, 请看config-sample.yml里面的写法, 然后把文件改名为config.yml即可.
+### 证书可以自己提供也可以使用默认的.
 
-# 支持币种 ironfish, rxd, cfx, kas, dnx
+### 支持币种 ironfish, rxd, cfx, kas, dnx
 
 
 
