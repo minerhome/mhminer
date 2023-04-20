@@ -2,9 +2,9 @@
 # 未完成  etc  rvn
 
 
-# 总在线矿机总数量限制
-workers_limit: 500
-workers_limit_port: 100    # 每个端口限制多少台矿机
+
+workers_limit: 500          # 总在线矿机总数量限制
+workers_limit_port: 100     # 每个端口限制多少台矿机
 
 
 # 证书, 亦可不提供使用默认的, 自己提供也行
