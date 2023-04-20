@@ -118,7 +118,8 @@ install() {
         echo "请输入正确的数字"
         ;;
     esac
-                
+
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_proxy/main/0.0.1/config.yml  -O  /root/mh_proxy/config.yml
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_proxy/main/0.0.1/config-sample.yml  -O  /root/mh_proxy/config-sample.yml
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_proxy/main/scripts/mh_proxy.service    -O  /lib/systemd/system/mh_proxy.service  
 
@@ -130,7 +131,7 @@ install() {
     clear
     echo -e "\n" 
     echo -e "\n" 
-    echo -e "\n" 
+    echo -e "安装结束请修改config.yml文件, 把里面的抽水钱包换成你自己的" 
     echo -e "\n" 
     echo -e "\n" 
 
