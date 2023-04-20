@@ -120,7 +120,7 @@ install() {
     esac
                 
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_proxy/main/0.0.1/config-sample.yml  -O  /root/mh_proxy/config-sample.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_proxy/main/scripts/mh_proxy.service  -O  /lib/systemd/system/mh_proxy.serivce
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_proxy/main/scripts/mh_proxy.service    -O  /lib/systemd/system/mh_proxy.service  
 
     chmod +x /root/mh_proxy/*
     systemctl daemon-reload
