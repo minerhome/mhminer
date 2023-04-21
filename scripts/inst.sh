@@ -72,11 +72,11 @@ check_limit(){
 }
 
 uninstall() {
-        echo "正在卸载......"
+        # echo "正在卸载......"
         systemctl stop mh_proxy  &
         systemctl disable mh_proxy  >> /dev/null
         rm -rf /root/mh_proxy
-        echo "卸载完记得重启服务器"
+        # echo "卸载完记得重启服务器"
 }
 
 
@@ -92,6 +92,8 @@ install() {
     
     install_common
     
+    uninstall   # 先把老的卸载
+
     rm -rf /root/mh_proxy
     mkdir /root/mh_proxy
     cd /root/mh_proxy
