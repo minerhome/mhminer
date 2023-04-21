@@ -1,2 +1,2 @@
 
-python run_proxy.py
+python mhminer.py

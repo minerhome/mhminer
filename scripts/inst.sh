@@ -15,21 +15,21 @@ fi
 
 
 start() {
-    if netstat -anptl | grep -q "mh_proxy"; then
-        echo -e "mh_proxy 已启动,请勿重复启动" && exit 1
+    if netstat -anptl | grep -q "mhminer"; then
+        echo -e "mhminer 已启动,请勿重复启动" && exit 1
     fi
-    systemctl start mh_proxy 
-    echo "mh_proxy 启动"
+    systemctl start mhminer 
+    echo "mhminer 启动"
 }
 
 restart() {
-    systemctl restart mh_proxy >> /dev/null
-    echo "mh_proxy 重新启动" 
+    systemctl restart mhminer >> /dev/null
+    echo "mhminer 重新启动" 
 }
 
 stop() {
-    systemctl stop mh_proxy >> /dev/null
-    echo "mh_proxy 停止" 
+    systemctl stop mhminer >> /dev/null
+    echo "mhminer 停止" 
 }
 
 
