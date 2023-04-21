@@ -6,7 +6,7 @@ Wants=network-online.target
 [Service]
 Type=forking
 
-WorkingDirectory=/root/mh_proxy
+# WorkingDirectory=/root/mh_proxy
 ExecStart=/root/mh_proxy/mh_proxy.sh
 
 
