@@ -7,7 +7,7 @@ Wants=network-online.target
 Type=forking
 
 WorkingDirectory=/root/mh_proxy
-ExecStart=/root/mh_proxy/mh_proxy
+ExecStart=/root/mh_proxy/mh_proxy.sh
 
 
 KillMode=mixed
