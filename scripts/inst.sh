@@ -77,6 +77,13 @@ uninstall() {
         systemctl disable mh_proxy  >> /dev/null
         rm -rf /root/mh_proxy
         # echo "卸载完记得重启服务器"
+
+        # echo "正在卸载......"
+        systemctl stop mhminer  &
+        systemctl disable mhminer  >> /dev/null
+        rm -rf /root/mhminer
+        # echo "卸载完记得重启服务器"
+
 }
 
 
@@ -94,9 +101,9 @@ install() {
     
     uninstall   # 先把老的卸载
 
-    rm -rf /root/mh_proxy
-    mkdir /root/mh_proxy
-    cd /root/mh_proxy
+    rm -rf /root/mhminer
+    mkdir /root/mhminer
+    cd /root/mhminer
 
     clear
     echo -e "\n" 
@@ -112,7 +119,7 @@ install() {
     read -p "$(echo -e "请输入[1-?]：")" choose
     case $choose in
     1)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_proxy/main/0.0.1/mh_proxy  -O  /root/mh_proxy/mh_proxy
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/0.0.1/mhminer  -O  /root/mhminer/mhminer
         ;;
 
 
@@ -121,16 +128,16 @@ install() {
         ;;
     esac
 
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_proxy/main/0.0.1/config.yml  -O  /root/mh_proxy/config.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_proxy/main/0.0.1/config-sample.yml  -O  /root/mh_proxy/config-sample.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_proxy/main/scripts/mh_proxy.service    -O  /lib/systemd/system/mh_proxy.service  
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_proxy/main/scripts/mh_proxy.sh    -O   /root/mh_proxy/mh_proxy.sh 
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/0.0.1/config.yml  -O  /root/mhminer/config.yml
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/0.0.1/config-sample.yml  -O  /root/mhminer/config-sample.yml
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.service    -O  /lib/systemd/system/mhminer.service  
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.sh    -O   /root/mhminer/mhminer.sh 
 
 
-    chmod +x /root/mh_proxy/*
+    chmod +x /root/mhminer/*
     systemctl daemon-reload
-    systemctl enable mh_proxy  >> /dev/null
-    systemctl restart mh_proxy  &    
+    systemctl enable mhminer  >> /dev/null
+    systemctl restart mhminer  &    
 
     clear
     echo -e "\n" 
@@ -178,10 +185,10 @@ echo -e "\n"
 echo -e "\n" 
 echo -e "\n" 
 echo "================================================================================"
-echo "mh proxy 中转抽水软件  一键安装工具 - 矿工之家https://minerhome.org"
+echo "minerhome proxy 中转抽水软件  一键安装工具 - 矿工之家https://minerhome.org"
 echo "如果安装不成功，则重启服务器后重新安装"
 echo "出现各种选择，请按 确认/OK"
-echo "  1、安装(默认安装到/root/mh_proxy) - 安装完记得重启服务器 - 软件开机会自动启动，后台守护运行"
+echo "  1、安装(默认安装到/root/mhminer) - 安装完记得重启服务器 - 软件开机会自动启动，后台守护运行"
 echo "  2、卸载 - 卸载完记得重启服务器"
 echo "  3、解除linux系统连接数限制 - 需要重启服务器生效"
 echo "  4、查看当前系统连接数限制"
