@@ -7,7 +7,7 @@
 ####### 开发者抽水,  千3
 
 
-铁鱼的交易所钱包要加上memo, 参考英雄池的说法是  钱包+memo,   如33llsdk3sf+12ddsr
+铁鱼的交易所钱包要加上memo, 参考英雄池的说法是  钱包+memo, 矿池有校正, 乱写没法通过.   如33llsdk3sf+12ddsr
 
 
 
@@ -15,6 +15,7 @@
 ### ubuntu20 默认安装在 /root/mhminer下面,  win则随便你放哪都行.
 ### 证书可以自己提供也可以使用默认的. cert.pem  key.pem这两个文件可以自己更换.
 
+### 目前矿机端可以选ssl tcp,  而矿池目前只能选tcp, 目前只能安装在国外了.
 ### 支持币种 ironfish, rxd, cfx, kas, dnx
 ### 待增加  etc, rvn, nexa, neox
 
