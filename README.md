@@ -16,8 +16,8 @@
 ### 证书可以自己提供也可以使用默认的. cert.pem  key.pem这两个文件可以自己更换.
 
 ### 目前矿机端可以选ssl tcp,  而矿池目前只能选tcp, 目前只能安装在国外了.
-### 支持币种 ironfish, rxd, cfx, kas, dnx
-### 待增加  etc, rvn, nexa, neox
+### 支持币种 ironfish, rxd, cfx, kas, dnx, etc
+### 待增加  rvn, nexa, neox
 
 
 #### 2023-4-20  铁鱼ironfish, rxd, cfx, kas, dnx 写好了, 大家还需要什么请留言.
