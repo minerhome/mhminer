@@ -15,7 +15,7 @@
 ### ubuntu20 默认安装在 /root/mhminer下面,  win则随便你放哪都行.
 ### 证书可以自己提供也可以使用默认的. cert.pem  key.pem这两个文件可以自己更换.
 
-### 目前矿机端可以选ssl tcp,  而矿池目前只能选tcp, 目前只能安装在国外了.
+### 目前矿机端可以选ssl tcp,  而矿池目前只能选tcp, 要安装在国内则填写socks5代理
 ### 支持币种 ironfish, rxd, cfx, kas, dnx, etc
 ### 待增加  rvn, nexa, neox
 
