@@ -20,7 +20,7 @@
 ### 待增加  rvn, nexa, neox
 
 
-#### 2023-4-20  铁鱼ironfish, rxd, cfx, kas, dnx 写好了, 大家还需要什么请留言.
+#### 2023-4-20  铁鱼ironfish, rxd, cfx, kas, dnx, etc 写好了, 大家还需要什么请留言.
 #### 2023-4-23  解决了铁鱼掉线问题
 
 
