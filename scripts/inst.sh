@@ -72,17 +72,11 @@ check_limit(){
 }
 
 uninstall() {
-        # echo "正在卸载......"
-        systemctl stop mh_proxy  &
-        systemctl disable mh_proxy  >> /dev/null
-        rm -rf /root/mh_proxy
-        # echo "卸载完记得重启服务器"
-
+  
         # echo "正在卸载......"
         systemctl stop mhminer  &
         systemctl disable mhminer  >> /dev/null
-        rm -rf /root/mhminer
-        # echo "卸载完记得重启服务器"
+        # rm -rf /root/mhminer
 
 }
 
@@ -101,8 +95,11 @@ install() {
     
     uninstall   # 先把老的卸载
 
-    rm -rf /root/mhminer
-    mkdir /root/mhminer
+    if [[ ! -d /root/mhminer ]]; then
+         mkdir /root/mhminer
+    fi
+
+
     cd /root/mhminer
 
     clear
@@ -132,14 +129,14 @@ install() {
         ;;
     esac
 
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/0.0.1/config-sample.yml  -O  /root/mhminer/config-sample.yml
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config-sample.yml  -O  /root/mhminer/config-sample.yml
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.service    -O  /lib/systemd/system/mhminer.service  
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.sh    -O   /root/mhminer/mhminer.sh 
 
 
     config_path=/root/mhminer/config.yml
     if test ! -f "$config_path"; then
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/0.0.1/config.yml  -O  /root/mhminer/config.yml
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config.yml  -O  /root/mhminer/config.yml
     fi
     
 
@@ -168,7 +165,7 @@ setup() {
     echo -e "\n" 
     echo -e "\n" 
 
-    if [[ ! -d /root/mh_proxy ]]; then
+    if [[ ! -d /root/mhminer ]]; then
         echo
         echo -e "请先安装再来设置"
         exit 1
