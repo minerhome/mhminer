@@ -73,11 +73,11 @@ check_limit(){
 
 uninstall() {
   
-        # echo "正在卸载......"
+        echo "正在卸载mhminer......"
         systemctl stop mhminer  &
         systemctl disable mhminer  >> /dev/null
-        # rm -rf /root/mhminer
-
+        rm -rf /root/mhminer
+        echo "卸载完成"
 }
 
 
@@ -93,7 +93,7 @@ install() {
     
     install_common
     
-    uninstall   # 先把老的卸载
+
 
     if [[ ! -d /root/mhminer ]]; then
          mkdir /root/mhminer
@@ -196,25 +196,17 @@ echo "如果安装不成功，则重启服务器后重新安装"
 echo "出现各种选择，请按 确认/OK"
 echo "  1、安装(默认安装到/root/mhminer) - 安装完记得重启服务器 - 软件开机会自动启动，后台守护运行"
 echo "  2、卸载 - 卸载完记得重启服务器"
-echo "  3、解除linux系统连接数限制 - 需要重启服务器生效"
-echo "  4、查看当前系统连接数限制"
-echo "  5、重启服务器"
+echo "  0、重启服务器"
 echo "================================================================================"
 read -p "$(echo -e "请选择[1-?]：")" choose
 case $choose in
 1)
     install
     ;;
-3)
+2)
     uninstall
     ;;
-4)
-    change_limit
-    ;;
-5)
-    check_limit
-    ;;
-6)
+0)
     reboot
     ;;
 *)
