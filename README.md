@@ -15,12 +15,12 @@
 ### ubuntu20 默认安装在 /root/mhminer下面,  win则随便你放哪都行.
 ### 证书可以自己提供也可以使用默认的. cert.pem  key.pem这两个文件可以自己更换.
 
-### 目前矿机端可以选ssl tcp,  而矿池目前只能选tcp, 要安装在国内则填写socks5代理
-### 支持币种 ironfish, rxd, cfx, kas, dnx, etc
-### 待增加  rvn, nexa, neox
+### 矿机可选tcp, ssl, 矿池也可以选tcp, ssl , 且可设置socks5代理, 方便安装在国内.
+### 支持币种 ironfish, rxd, cfx, kas, dnx
+### 待增加  rvn, nexa, neox, etc, ethw
 
 
-###### 2023-4-20  铁鱼ironfish, rxd, cfx, kas, dnx, etc 写好了, 大家还需要什么请留言.
+###### 2023-4-20  铁鱼ironfish, rxd, cfx, kas, dnx 写好了, 大家还需要什么请留言.
 ###### 2023-4-23  解决了铁鱼掉线问题
 ###### 2023-4-25  优化性能
 
