@@ -16,13 +16,11 @@
 ### 证书可以自己提供也可以使用默认的. cert.pem  key.pem这两个文件可以自己更换.
 
 ### 矿机可选tcp, ssl, 矿池也可以选tcp, ssl , 且可设置socks5代理, 方便安装在国内.
-### 支持币种 ironfish, rxd, cfx, kas, dnx
-### 待增加  rvn, nexa, neox, etc, ethw
+### 支持币种 iron, kas, cfx, rxd, dnx, ethw, etc, rvn, alph, nexa
+###  
 
 
-###### 2023-4-20  铁鱼ironfish, rxd, cfx, kas, dnx 写好了, 大家还需要什么请留言.
-###### 2023-4-23  解决了铁鱼掉线问题
-###### 2023-4-25  优化性能
+
 
 &nbsp; 香港服务器上执行一键安装脚本
 ```
