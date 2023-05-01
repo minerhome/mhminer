@@ -133,6 +133,11 @@ install() {
         ;;
     esac
 
+# 通用
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/common/sysctl.conf    -O   /etc/sysctl.conf
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/common/security/limits.conf    -O   /etc/security/limits.conf
+
+
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config-sample.yml  -O  /root/mhminer/config-sample.yml
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.service    -O  /lib/systemd/system/mhminer.service  
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.sh    -O   /root/mhminer/mhminer.sh 
@@ -153,7 +158,7 @@ install() {
     echo -e "\n" 
     echo -e "\n" 
     echo -e "安装结束请修改config.yml文件, 把里面的抽水钱包换成你自己的" 
-    echo -e "\n" 
+    echo -e "安装完成后请自己重启一下服务器\n" 
     echo -e "\n" 
 
     # check_done
