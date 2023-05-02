@@ -16,7 +16,7 @@
 ### 证书可以自己提供也可以使用默认的. cert.pem  key.pem这两个文件可以自己更换.
 
 ### 矿机可选tcp, ssl, 矿池也可以选tcp, ssl , 且可设置socks5代理, 方便安装在国内.
-### 支持币种 iron, kas, cfx, rxd, dnx, ethw, etc, rvn, alph, nexa
+### 支持币种 iron, kas, cfx, rxd, dnx, ethw, etc, rvn, alph, nexa(用gminer挖)  一些币种它会挑内核的.
 ###  
 
 
