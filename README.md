@@ -7,9 +7,7 @@
 
 
  
-####    iron  kas    cfx   rxd   dnx  ethw   etc    alph  nexa
-####        neox(gminer)  xmr(xmrig)  tcc(wildrig)  rvn  ergo
-####        flux  sero  etczil  ethwzil
+###  已经支持的加密货币  iron  kas    cfx   rxd   dnx  ethw   etc    alph  nexa  neox(gminer)  xmr(xmrig)  tcc(wildrig)  rvn  ergo flux  sero  etczil  ethwzil
 
 
 ##### 开发者抽水,  千3
