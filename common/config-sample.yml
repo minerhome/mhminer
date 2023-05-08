@@ -1,16 +1,42 @@
-# 已完成  iron  kas    cfx   rxd   dnx
-# 未完成  etc  rvn
+# 总抽水不得超过30%
+# 已完成  iron  kas    cfx   rxd   dnx  ethw   etc    alph  nexa
+#        neox(gminer)  xmr(xmrig)  tcc(wildrig)  rvn  ergo
+#        flux  sero  etczil  ethwzil
+#
+# 未完成   grin   zil
+# 芯片机 未完成 hns
+
+# 不同的池, 无效/拒绝率不一样
+# iron 英雄池 鱼池
+# xmr  xmr.nanopool.org    xmrig
+# rvn  hk.ravencoin.herominers.com:1140  gminer
+# kas  woolypooly
+# cfx
+# rxd
+# clore  newpool.pw  gminer
+# ergo   hk.ergo.herominers.com:1180  lolminer
+# zil   us1-zil.shardpool.io:3333  lolminer
+# sero   pool2.sero.cash:8808   trex   gminer
+# etc             gminer nbminer
+# etczil      hk.ezil.me:4444   etc-zil.f2pool.com:6200     gminer nbminer  lolminer
+# ethw        hk.ethw.herominers.com:1147    gminer nbminer   lolminer
+# ethwzil     asia.ezil.me:50100     gminer nbminer    lolminer
+
 
 
 # 总在线矿机总数量限制
-workers_limit: 500
-workers_limit_port: 100    # 每个端口限制多少台矿机
+workers_limit: 1000
+workers_limit_port: 1000    # 每个端口限制多少台矿机
+
+
+monitor_config: true    # 监控此配置文件, 下面的端口信息更改,增加或删除或更改, 则更换过来
+monitor_port: true      # 监控端口异常退出, 异常退出则尝试重复开
+
 
 
 # 证书, 亦可不提供使用默认的, 自己提供也行
 cert: cert.pem
 key: key.pem
-
 
 
 servers:
@@ -27,10 +53,8 @@ servers:
         worker_name: "devfee-1"
         fee_percent: 3     # 3%
         address: "7d878a6b6fb8cdaa32b334091e3fee5483eb9e7c3933b386e2bf4a1bf44dc36a"  #  改成你自己的钱包
-        pool:          # 跨池抽就要填, 不填表示跟主池一样
-          ip: hk.ironfish.herominers.com:1145       #  这里填抽到哪个池
-          ssl: false
-          proxy: ""
+
+
 
   - name: IRON-鱼池
     ip: 0.0.0.0:17660     # 给客人连接的端口, 一般前面固定为0.0.0.0
@@ -61,18 +85,11 @@ servers:
         worker_name: "devfee-1"
         fee_percent: 1     # 1%
         address: "1KFFbumRuJhyWSTZNRPEPy1DjDj5rKnSJD"  # 改成你自己的钱包
-        pool:          # 跨池抽就要填, 不填表示跟主池一样
-          ip: pool.sg.woolypooly.com:3122       #  这里填抽到哪个池
-          ssl: false
-          proxy: ""
       - name: 同事
         worker_name: "devfee-2"
         fee_percent: 3     # 3%
         address: "1KFFbumRuJhyWSTZNRPEPy1DjDj5rKnSJD"  # 改成你自己的钱包
-        pool:          # 跨池抽就要填, 不填表示跟主池一样
-          ip: pool.sg.woolypooly.com:3122       #  这里填抽到哪个池
-          ssl: false
-          proxy: ""
+
 
 
   - name: CFX抽水
@@ -88,10 +105,8 @@ servers:
         worker_name: "devfee-1"
         fee_percent: 1     # 1%
         address: "cfx:aapryhjwgd9be25dku6c9sjwv89kr5je1ukshb54py"  # 改成你自己的钱包
-        pool:          # 跨池抽就要填, 不填表示跟主池一样
-          ip: pool.sg.woolypooly.com:3094       #  这里填抽到哪个池
-          ssl: false
-          proxy: ""
+
+
 
   - name: DNX抽水
     ip: 0.0.0.0:10615     # 给客人连接的端口, 一般前面固定为0.0.0.0
@@ -109,7 +124,7 @@ servers:
 
 
 
-  - name: KAS自用
+  - name: KAS 抽水
     ip: 0.0.0.0:16510
     ssl: true
     coin: KAS
