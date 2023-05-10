@@ -1,29 +1,42 @@
-# mhminer
-挖矿抽水软件测试版  支持windows和ubuntu 20
-也可到群里下载, QQ群: 140777161
-
-#### 教学视频  https://www.youtube.com/watch?v=Yu3eOGwn2hU
+# mhencrypt  本地加密
+要跟 mhminer配合使用, 本地加密之后发往mhminer服务器解密. 针对专业机, 如btc, ltc等专业机.
 
 
 
- 
-###  已经支持的加密货币  iron  kas    cfx   rxd   dnx  eth(使用eth协议的通用如ethw, ethf等) eth_getwork  etc etc_getwork   alph  nexa  neox(gminer)  xmr(xmrig)  tcc(wildrig)  rvn  ergo flux  sero  etczil etczil_getwork  ethzil ethzil_getwork
 
-### 关于 eth eth_getwork 这两种, 建议两个端口都开起来, 优先使用普通的eth, 有的内核或机器只能使用 eth_getwork,  etc的同理.
+配置文件 config.yml
 
-
-##### 开发者抽水,  千3
-
-##### ubuntu使用下面的一键脚本, windows的可以直接下载使用, 只须一个配置文件, 请看config-sample.yml里面的写法, 然后把文件改名为config.yml即可.
-##### ubuntu20 默认安装在 /root/mhminer下面,  win则随便你放哪都行.
-##### 证书可以自己提供也可以使用默认的. cert.pem  key.pem这两个文件可以自己更换.
-
-##### 矿机可选tcp, ssl, 矿池也可以选tcp, ssl , 且可设置socks5代理, 方便安装在国内.
-
-
-&nbsp; 香港服务器上执行一键安装脚本
 ```
-bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/inst.sh)
+
+# 本地加密端配置文件
+
+
+# 总在线矿机总数量限制
+workers_limit: 1000
+workers_limit_port: 1000    # 每个端口限制多少台矿机
+
+
+monitor_config: true    # 监控此配置文件, 下面的端口信息更改,增加或删除或更改, 则更换过来
+monitor_port: true      # 监控端口异常退出, 异常退出则尝试重复开
+
+
+
+servers:
+  - name: 本地端加密 - 鱼池btc
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密,
+    ip: 0.0.0.0:14881    # 给本地的btc接进来的端口, 矿机通过这个端口连接这台加密机
+    pool:
+      ip: 8.218.238.31:14881       # 发给自己的服务端解密
+
+
+
+
+
+
+
+
+
+
 
 ```
 
