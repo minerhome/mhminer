@@ -88,7 +88,7 @@ servers:
         pool: # 跨池抽到哪
             ip: hk.kaspa.herominers.com:1206
             ssl: false               # 矿池一般选择tcp
-            proxy: ""                # 如果安装在国内, 则这里要填上socks5代理
+            proxy: ""                # 如果安装在国内, 则这里要填上socks5代理:端口
 
 
 
@@ -104,7 +104,7 @@ servers:
       - name: 抽水1                
         worker_name: "devfee-1-20230511"
         fee_percent: 1     # 1%
-        address: "viponedream"  # 改成你自己的钱包
+        address: "你的抽水钱包"  # 改成你自己的钱包
 
 
 
