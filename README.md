@@ -4,7 +4,7 @@
 
 #### 教学视频  https://www.youtube.com/watch?v=Yu3eOGwn2hU
 
-#### 本地加密端 https://github.com/minerhome/mhminer/tree/main/mhencrypt
+#### 本地加密端(专业机建议使用)  https://github.com/minerhome/mhminer/tree/main/mhencrypt
  
 
 ###  已经支持的加密货币  iron  kas    cfx   rxd   dnx  eth(使用eth协议的通用如ethw, ethf等) eth_getwork  etc etc_getwork   alph  nexa  neox(gminer)  xmr(xmrig)  tcc(wildrig)  rvn  ergo flux  sero  etczil etczil_getwork  ethzil ethzil_getwork
