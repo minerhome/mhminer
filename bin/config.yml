@@ -125,16 +125,16 @@ servers:
 
 
 
- - name: 服务端解密 - 鱼池btc
-   encrypt: true        # 服务端则解密, 把本地端发来的数据解密再发给矿池
-   ip: 0.0.0.0:14881    # 解密本地端发来的数据, 端口要对应
-   coin: BTC
-   pool:            # 实际矿池
-     ip:  btc-asia.f2pool.com:1314  #
-     ssl: false
-   devfee: # 可开多个抽水, 损耗会更大
-     - name: 同学-1                # 同池抽
-       worker_name: "devfee-1-0510"
-       fee_percent: 1     # 1%
-       address: "你的钱包"  # 改成你自己的钱包
+  - name: 服务端解密 - 鱼池btc
+    encrypt: true        # 服务端则解密, 把本地端发来的数据解密再发给矿池
+    ip: 0.0.0.0:14881    # 解密本地端发来的数据, 端口要对应
+    coin: BTC
+    pool:            # 实际矿池
+      ip:  btc-asia.f2pool.com:1314  #
+      ssl: false
+    devfee: # 可开多个抽水, 损耗会更大
+      - name: 同学-1                # 同池抽
+        worker_name: "devfee-1-0510"
+        fee_percent: 1     # 1%
+        address: "你的钱包"  # 改成你自己的钱包
 
