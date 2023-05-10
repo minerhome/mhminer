@@ -52,9 +52,7 @@ servers:
       - name: "小王"
         worker_name: "devfee-1"
         fee_percent: 3     # 3%
-        address: "7d878a6b6fb8cdaa32b334091e3fee5483eb9e7c3933b386e2bf4a1bf44dc36a"  #  改成你自己的钱包
-
-
+        address: "你的抽水钱包"  #  改成你自己的钱包
 
   - name: IRON-鱼池
     ip: 0.0.0.0:17660     # 给客人连接的端口, 一般前面固定为0.0.0.0
@@ -68,9 +66,7 @@ servers:
       - name: "小王"
         worker_name: "devfee-1"
         fee_percent: 3     # 3%
-        address: "viponedream"  #  改成你自己的钱包  鱼池要用挖矿帐号
-
-
+        address: "你的抽水钱包"  #  改成你自己的钱包  鱼池要用挖矿帐号
 
   - name: RXD抽水
     ip: 0.0.0.0:10160     # 给客人连接的端口, 一般前面固定为0.0.0.0
@@ -84,13 +80,11 @@ servers:
       - name: 同学
         worker_name: "devfee-1"
         fee_percent: 1     # 1%
-        address: "1KFFbumRuJhyWSTZNRPEPy1DjDj5rKnSJD"  # 改成你自己的钱包
+        address: "你的抽水钱包"  # 改成你自己的钱包
       - name: 同事
         worker_name: "devfee-2"
         fee_percent: 3     # 3%
-        address: "1KFFbumRuJhyWSTZNRPEPy1DjDj5rKnSJD"  # 改成你自己的钱包
-
-
+        address: "你的抽水钱包"  # 改成你自己的钱包
 
   - name: CFX抽水
     ip: 0.0.0.0:13000     # 给客人连接的端口, 一般前面固定为0.0.0.0
@@ -104,9 +98,7 @@ servers:
       - name: 同学
         worker_name: "devfee-1"
         fee_percent: 1     # 1%
-        address: "cfx:aapryhjwgd9be25dku6c9sjwv89kr5je1ukshb54py"  # 改成你自己的钱包
-
-
+        address: "你的抽水钱包"  # 改成你自己的钱包
 
   - name: DNX 抽水
     ip: 0.0.0.0:10615     # 给客人连接的端口, 一般前面固定为0.0.0.0
@@ -120,9 +112,7 @@ servers:
       - name: 同学
         worker_name: "devfee-1"
         fee_percent: 1     # 1%
-        address: "XwnaXVqNeC1MVPZYEzCzzAQLiFzsGZ7aei8d6TCD1kyp7qzfHnJNxRvTDgnM4X3qjsZrgfgojbnGEZRVepMAQYce28bekk9Xk"  # 改成你自己的钱包
-
-
+        address: "你的抽水钱包"  # 改成你自己的钱包
 
   - name: KAS 抽水
     ip: 0.0.0.0:16510
