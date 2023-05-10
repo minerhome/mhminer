@@ -16,9 +16,8 @@ workers_limit: 1000
 workers_limit_port: 1000    # 每个端口限制多少台矿机
 
 
-monitor_config: true    # 监控此配置文件, 下面的端口信息更改,增加或删除或更改, 则更换过来
+monitor_config: true    # 监控此配置文件, 下面的端口信息更改,增加或删除或更改, 自动更新
 monitor_port: true      # 监控端口异常退出, 异常退出则尝试重复开
-
 
 
 servers:
@@ -27,16 +26,6 @@ servers:
     ip: 0.0.0.0:14881    # 给本地的btc接进来的端口, 矿机通过这个端口连接这台加密机
     pool:
       ip: 8.218.238.31:14881       # 发给自己的服务端解密
-
-
-
-
-
-
-
-
-
-
 
 ```
 
