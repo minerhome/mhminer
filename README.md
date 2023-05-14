@@ -1,6 +1,7 @@
 # mhminer
 挖矿抽水软件测试版  支持windows和ubuntu 20
 也可到群里下载, QQ群: 140777161
+电报群 https://t.me/+2vpGD-JpiEIxZDk9
 
 #### 教学视频  https://www.youtube.com/watch?v=Yu3eOGwn2hU
 
