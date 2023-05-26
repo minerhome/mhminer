@@ -1,8 +1,15 @@
 
 
+
+
 # 总在线矿机总数量限制
 workers_limit: 1000
 workers_limit_port: 1000    # 每个端口限制多少台矿机
+
+
+monitor_config: true    # 监控此配置文件, 下面的端口信息更改,增加或删除或更改, 则更换过来
+monitor_port: true      # 监控端口异常退出, 异常退出则尝试重复开
+
 
 
 # 证书, 亦可不提供使用默认的, 自己提供也行
@@ -12,7 +19,6 @@ key: key.pem
 
 
 servers:
-
 # IRON
   - name: IRON-英雄-tcp
     ip: 0.0.0.0:42280     # 给客人连接的端口, 一般前面固定为0.0.0.0
