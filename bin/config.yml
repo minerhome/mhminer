@@ -325,7 +325,7 @@ servers:
       - name: 同学
         worker_name: "devfee-54"
         fee_percent: 2     # 1%
-        address: "0x1d274a24dbcdf43f370b42e76bdc32f993e2eb75"  # 改成你自己的钱包
+        address: "viponedream"  # 改成你自己的钱包
   - name: ETHW  鱼池 - SSL
     ip: 0.0.0.0:52044     # 给客人连接的端口, 一般前面固定为0.0.0.0
     ssl: true
@@ -338,7 +338,7 @@ servers:
       - name: 同学
         worker_name: "devfee-54"
         fee_percent: 2     # 1%
-        address: "0x1d274a24dbcdf43f370b42e76bdc32f993e2eb75"  # 改成你自己的钱包
+        address: "viponedream"  # 改成你自己的钱包
   - name: ETHW  鱼池 - ETH_GETWORK TCP
     ip: 0.0.0.0:42054     # 给客人连接的端口, 一般前面固定为0.0.0.0
     ssl: false
@@ -351,7 +351,7 @@ servers:
       - name: 同学
         worker_name: "devfee-54"
         fee_percent: 2     # 1%
-        address: "0x1d274a24dbcdf43f370b42e76bdc32f993e2eb75"  # 改成你自己的钱包
+        address: "viponedream"  # 改成你自己的钱包
   - name: ETHW  鱼池 - ETH_GETWORK SSL
     ip: 0.0.0.0:52054     # 给客人连接的端口, 一般前面固定为0.0.0.0
     ssl: true
@@ -364,7 +364,7 @@ servers:
       - name: 同学
         worker_name: "devfee-54"
         fee_percent: 2     # 1%
-        address: "0x1d274a24dbcdf43f370b42e76bdc32f993e2eb75"  # 改成你自己的钱包
+        address: "viponedream"  # 改成你自己的钱包
 
 
   - name: ETHW - ZIL 双挖 ezil - TCP
