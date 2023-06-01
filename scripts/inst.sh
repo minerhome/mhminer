@@ -117,7 +117,7 @@ install() {
     echo -e "\n" 
     echo "请选择要安装的版本"
 
-    echo "  1、抽水中转 - ubuntu20 - win的话可直接下载"
+    echo "  1、矿池中转 - ubuntu20 - win的话可直接下载"
     echo "  2、本地加密 - hiveos - win的话可直接下载"
 
     read -p "$(echo -e "请输入[1-?]：")" choose
