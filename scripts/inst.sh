@@ -124,8 +124,6 @@ install() {
     case $choose in
 
 
-
-
     1)
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/lastest  -O  /root/mhminer/mhminer
 
@@ -133,16 +131,15 @@ install() {
             wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config.yml  -O  /root/mhminer/config.yml
         fi
         ;;
-        
+
     2)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/0.0.3  -O  /root/mhminer/mhminer
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/mhencrypt/mhencrypt  -O  /root/mhminer/mhminer
 
         if test ! -f "$config_path"; then
-            wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config.yml  -O  /root/mhminer/config.yml
+             wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/mhencrypt/config.yml  -O  /root/mhminer/config.yml
         fi
 
         ;;
-
 
 
     *)
