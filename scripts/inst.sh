@@ -152,7 +152,7 @@ install() {
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/common/security/limits.conf    -O   /etc/security/limits.conf
 
 
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config-sample.yml  -O  /root/mhminer/config-sample.yml
+    # wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config-sample.yml  -O  /root/mhminer/config-sample.yml
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.service    -O  /lib/systemd/system/mhminer.service  
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.sh    -O   /root/mhminer/mhminer.sh 
 
