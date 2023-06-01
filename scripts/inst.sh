@@ -102,6 +102,10 @@ install() {
 
     cd /root/mhminer
 
+    config_path=/root/mhminer/config.yml
+
+    
+
     clear
     echo -e "\n" 
     echo -e "\n" 
@@ -112,20 +116,33 @@ install() {
     echo -e "\n" 
     echo -e "\n" 
     echo "请选择要安装的版本"
-    echo "  1、v0.0.1"
-    echo "  2、v0.0.3"
-    echo "  0、最新版"
+
+    echo "  1、抽水中转 - ubuntu20 - win的话可直接下载"
+    echo "  2、本地加密 - hiveos - win的话可直接下载"
+
     read -p "$(echo -e "请输入[1-?]：")" choose
     case $choose in
+
+
+
+
     1)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/0.0.1/mhminer  -O  /root/mhminer/mhminer
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/lastest  -O  /root/mhminer/mhminer
+
+        if test ! -f "$config_path"; then
+            wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config.yml  -O  /root/mhminer/config.yml
+        fi
         ;;
+        
     2)
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/0.0.3  -O  /root/mhminer/mhminer
+
+        if test ! -f "$config_path"; then
+            wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config.yml  -O  /root/mhminer/config.yml
+        fi
+
         ;;
-    0)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/lastest  -O  /root/mhminer/mhminer
-        ;;
+
 
 
     *)
@@ -143,11 +160,7 @@ install() {
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.sh    -O   /root/mhminer/mhminer.sh 
 
 
-    config_path=/root/mhminer/config.yml
-    if test ! -f "$config_path"; then
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config.yml  -O  /root/mhminer/config.yml
-    fi
-    
+
 
     chmod +x /root/mhminer/*
     systemctl daemon-reload
