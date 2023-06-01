@@ -1,11 +1,13 @@
 
 
+global_proxy: ""        # 通用代理, 如果矿池没有设置代理则使用这个代理    如"127.0.0.1:2333"
+global_ip: ""           # 本地加密端专用, 指定专线ip, 否则走公用服务器
+
 
 
 # 总在线矿机总数量限制
 workers_limit: 1000
 workers_limit_port: 1000    # 每个端口限制多少台矿机
-
 
 monitor_config: true    # 监控此配置文件, 下面的端口信息更改,增加或删除或更改, 则更换过来
 monitor_port: true      # 监控端口异常退出, 异常退出则尝试重复开
@@ -1660,6 +1662,72 @@ servers:
         worker_name: "devfee-1-1"
         fee_percent: 2     # 3%
         address: "PXQNPV2CVkvxQvnzVmQT2wLzY8DA8Lint2"  #  改成你自己的钱包
+
+
+
+
+
+
+
+
+# SKYDOGE
+  - name: SKYDOGE 666pool TCP              #
+    ip: 0.0.0.0:43120      #
+    ssl: false             #
+    coin: SKYDOGE  #             # 币种, 参数上面完成的
+    pool: # 实际代理矿池
+      ip:  skydoge.666pool.com:5590   #
+      ssl: false
+      proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
+    devfee:
+      - name: "小1"
+        worker_name: "devfee-1-1"
+        fee_percent: 3     # 3%
+        address: "3PJ3pDE9w41eL2rnsf7Vosyz2iRpUnvvfv"  #  改成你自己的钱包
+
+
+
+  - name: SKYDOGE 666pool SSL              #
+    ip: 0.0.0.0:53120      #
+    ssl: true             #
+    coin: SKYDOGE  #             # 币种, 参数上面完成的
+    pool: # 实际代理矿池
+      ip:  skydoge.666pool.com:5590   #
+      ssl: false
+      proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
+    devfee:
+      - name: "小王"
+        worker_name: "devfee-1-1"
+        fee_percent: 3     # 3%
+        address: "3PJ3pDE9w41eL2rnsf7Vosyz2iRpUnvvfv"  #  改成你自己的钱包
+
+
+# # OCTA
+  - name: OCTA coolpool TCP              #
+    ip: 0.0.0.0:42620      #
+    ssl: false             #
+    coin: ETH_GETWORK  #             # 币种, 参数上面完成的
+    pool: # 实际代理矿池
+      ip:  octa.coolpool.top:11003   #
+      ssl: false
+    devfee:
+      - name: "小1"
+        worker_name: "devfee-1-1"
+        fee_percent: 3     # 3%
+        address: "0xab47ef096164cD35430e78F22fe837F10592c214"  #  改成你自己的钱包
+  - name: OCTA coolpool SSL              #
+    ip: 0.0.0.0:52620      #
+    ssl: true             #
+    coin: ETH_GETWORK  #             # 币种, 参数上面完成的
+    pool: # 实际代理矿池
+      ip:  octa.coolpool.top:11003   #
+      ssl: false
+    devfee:
+      - name: "小王"
+        worker_name: "devfee-1-1"
+        fee_percent: 3     # 3%
+        address: "0xab47ef096164cD35430e78F22fe837F10592c214"  #  改成你自己的钱包
+
 
 
 
