@@ -167,8 +167,8 @@ install() {
     clear
     echo -e "\n" 
     echo -e "\n" 
-    echo -e "安装结束请修改config.yml文件, 把里面的抽水钱包换成你自己的" 
-    echo -e "安装完成后请自己重启一下服务器\n" 
+    echo -e "安装完成, 根据实际情况修改 /root/mhminer/config.yml文件" 
+    echo -e "然后手工重启\n" 
     echo -e "\n" 
 
     # check_done
