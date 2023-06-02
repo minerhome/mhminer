@@ -3,10 +3,13 @@
 也可到群里下载, QQ群: 140777161
 电报群 https://t.me/+2vpGD-JpiEIxZDk9
 
+
 #### 教学视频  https://www.youtube.com/watch?v=Yu3eOGwn2hU
 
-#### 本地加密端(专业机建议使用)  https://github.com/minerhome/mhminer/tree/main/mhencrypt
- 
+#### 本地加密端(专业机建议使用)  https://github.com/minerhome/mhminer/tree/main/mhtunnel
+
+
+
 
 ###  已完成币种
 ###  eth eth_getwork - 使用eth协议的, 如ethw, ethf等
