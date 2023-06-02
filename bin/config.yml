@@ -1,8 +1,16 @@
+# 已完成币种
+# eth eth_getwork - 使用eth协议的, 如ethw, ethf等
+# etc etc_getwork - 使用etc协议的
+# ethzil ethzil_getwork etczil etczil_getwork
+# iron kas cfx rxd dnx alph nexa neox xmr tcc rvn ergo flux sero
+# grin pepew novo taft tcc clore skydoge
+# btc
 
 
-global_proxy: ""        # 通用代理, 如果矿池没有设置代理则使用这个代理    如"127.0.0.1:2333"
-global_ip: ""           # 本地加密端专用, 指定专线ip, 否则走公用服务器
 
+
+
+global_proxy: ""      # 通用socks5代理, 如果矿池没有设置代理则使用这个代理, 如"127.0.0.1:2333", 如果安装在国内则一般要用代理
 
 
 # 总在线矿机总数量限制
@@ -1665,11 +1673,6 @@ servers:
 
 
 
-
-
-
-
-
 # SKYDOGE
   - name: SKYDOGE 666pool TCP              #
     ip: 0.0.0.0:43120      #
@@ -1682,7 +1685,7 @@ servers:
     devfee:
       - name: "小1"
         worker_name: "devfee-1-1"
-        fee_percent: 3     # 3%
+        fee_percent: 2     # 3%
         address: "3PJ3pDE9w41eL2rnsf7Vosyz2iRpUnvvfv"  #  改成你自己的钱包
 
 
@@ -1698,7 +1701,7 @@ servers:
     devfee:
       - name: "小王"
         worker_name: "devfee-1-1"
-        fee_percent: 3     # 3%
+        fee_percent: 2     # 3%
         address: "3PJ3pDE9w41eL2rnsf7Vosyz2iRpUnvvfv"  #  改成你自己的钱包
 
 
@@ -1713,7 +1716,7 @@ servers:
     devfee:
       - name: "小1"
         worker_name: "devfee-1-1"
-        fee_percent: 3     # 3%
+        fee_percent: 2     # 3%
         address: "0xab47ef096164cD35430e78F22fe837F10592c214"  #  改成你自己的钱包
   - name: OCTA coolpool SSL              #
     ip: 0.0.0.0:52620      #
@@ -1725,7 +1728,7 @@ servers:
     devfee:
       - name: "小王"
         worker_name: "devfee-1-1"
-        fee_percent: 3     # 3%
+        fee_percent: 2     # 3%
         address: "0xab47ef096164cD35430e78F22fe837F10592c214"  #  改成你自己的钱包
 
 

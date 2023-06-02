@@ -20,11 +20,13 @@
 
 ##### 开发者抽水,  千1
 
-##### ubuntu使用下面的一键脚本, windows的可以直接下载使用, 只须一个配置文件,  然后把文件改名为config.yml即可.
+
+##### ubuntu使用下面的一键脚本, windows的可以直接下载使用, 只须一个配置文件config.yml, 已经配置好了, 可改里面的抽水比例及抽水钱包, 不抽则改为0
 ##### ubuntu20 默认安装在 /root/mhminer下面,  win则随便你放哪都行.
 ##### 证书可以自己提供也可以使用默认的. cert.pem  key.pem这两个文件可以自己更换.
 
-##### 矿机可选tcp, ssl, 矿池也可以选tcp, ssl , 且可设置socks5代理, 方便安装在国内.
+##### 矿机可选tcp, ssl, 矿池也可以选tcp, ssl 
+
 
 
 &nbsp; 香港服务器上执行一键安装脚本
@@ -38,9 +40,13 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mhminer/main/scrip
 
 
 
-mhminer 配置文件示例  config.yml
+mhminer 配置文件示例  config.yml,  不明白的不要自己写, 使用默认的即可.
 
 ```
+
+
+global_proxy: ""      # 通用socks5代理, 如果矿池没有设置代理则使用这个代理, 如"127.0.0.1:2333", 如果安装在国内则一般要用代理
+
 
 # 总在线矿机总数量限制
 workers_limit: 1000
@@ -95,8 +101,6 @@ servers:
             ip: hk.kaspa.herominers.com:1206
             ssl: false               # 矿池一般选择tcp
             proxy: ""                # 如果安装在国内, 则这里要填上socks5代理:端口
-
-
 
 
   - name: 服务端解密 - 鱼池btc
