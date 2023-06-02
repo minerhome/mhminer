@@ -8,3 +8,8 @@
 服务器设置 https://github.com/minerhome/mhminer
 本地端设置 https://github.com/minerhome/mhminer/tree/main/mhtunnel
 
+
+
+视频用法  https://youtu.be/qvne89HN2Co
+
+
