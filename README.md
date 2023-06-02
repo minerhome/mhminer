@@ -8,14 +8,19 @@
 #### 本地加密端(专业机建议使用)  https://github.com/minerhome/mhminer/tree/main/mhencrypt
  
 
-###  已经支持的加密货币  iron  kas    cfx   rxd   dnx  eth(使用eth协议的通用如ethw, ethf等) eth_getwork  etc etc_getwork   alph  nexa  neox(gminer)  xmr(xmrig)  tcc(wildrig)  rvn  ergo flux  sero  etczil etczil_getwork  ethzil ethzil_getwork  grin  pepew novo taft  tcc clore skydoge
+###  已完成币种
+###  eth eth_getwork - 使用eth协议的, 如ethw, ethf等
+###  etc etc_getwork - 使用etc协议的
+###  ethzil ethzil_getwork etczil etczil_getwork
+###  iron kas cfx rxd dnx alph nexa neox xmr tcc rvn ergo flux sero
+###  grin pepew novo taft tcc clore skydoge
+###  btc
 
-### 关于 eth eth_getwork 这两种, 建议两个端口都开起来, 优先使用普通的eth, 有的内核或机器只能使用 eth_getwork,  etc的同理.
 
 
 ##### 开发者抽水,  千1
 
-##### ubuntu使用下面的一键脚本, windows的可以直接下载使用, 只须一个配置文件, 请看config-sample.yml里面的写法, 然后把文件改名为config.yml即可.
+##### ubuntu使用下面的一键脚本, windows的可以直接下载使用, 只须一个配置文件,  然后把文件改名为config.yml即可.
 ##### ubuntu20 默认安装在 /root/mhminer下面,  win则随便你放哪都行.
 ##### 证书可以自己提供也可以使用默认的. cert.pem  key.pem这两个文件可以自己更换.
 
