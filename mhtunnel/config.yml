@@ -1,0 +1,361 @@
+
+
+
+
+
+
+global_ip: ""           # 本地加密端专用, 指定专线ip, 否则走公用服务器
+
+
+
+# 总在线矿机总数量限制
+workers_limit: 1000
+workers_limit_port: 1000    # 每个端口限制多少台矿机
+
+monitor_config: true    # 监控此配置文件, 下面的端口信息更改,增加或删除或更改, 则更换过来
+monitor_port: true      # 监控端口异常退出, 异常退出则尝试重复开
+
+
+
+# 证书, 亦可不提供使用默认的, 自己提供也行
+cert: cert.pem
+key: key.pem
+
+
+
+servers:
+
+
+# IRON
+  - name: IRON-英雄-tcp
+    ip: 0.0.0.0:42280     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: IRON-鱼池-tcp
+    ip: 0.0.0.0:42281     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+# RXD
+  - name: RXD wooly - tcp
+    ip: 0.0.0.0:42220     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: RXD-rplant-tcp
+    ip: 0.0.0.0:42221
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+
+# CFX
+  - name: CFX - 鱼池 - tcp
+    ip: 0.0.0.0:42200     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: CFX - 毛池 - tcp
+    ip: 0.0.0.0:42201     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+#  DNX
+  - name: DNX - ekapool - TCP
+    ip: 0.0.0.0:42260     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: DNX - 独角兽 - TCP
+    ip: 0.0.0.0:42261     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+
+#  ethw
+  - name: ETHW 2m - TCP
+    ip: 0.0.0.0:42040     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: ETHW 2m - ETH_GETWORK TCP
+    ip: 0.0.0.0:42050     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+  - name: ETHW  鱼池 - TCP
+    ip: 0.0.0.0:42044     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: ETHW  鱼池 - ETH_GETWORK TCP
+    ip: 0.0.0.0:42054     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+  - name: ETHW - ZIL 双挖 ezil - TCP
+    ip: 0.0.0.0:42046     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: ETHW - ZIL 双挖 ezil - ETH_GETWORK TCP
+    ip: 0.0.0.0:42056     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+  - name: ETHW - ZIL 双挖 K1 - ETHZIL_GETWORK TCP
+    ip: 0.0.0.0:42047     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: ETHW - ZIL 双挖 K1 -  TCP
+    ip: 0.0.0.0:42057     # 给客人连接的端口, 一般前面固定为0.0.0.0
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+# etc
+
+  - name: etc E池 TCP
+    ip: 0.0.0.0:42080
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: etc 鱼池 TCP  GETWORK
+    ip: 0.0.0.0:42081
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: etc 鱼池   TCP
+    ip: 0.0.0.0:42101
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+  - name: etc 2miners  ZIL_GETWORK TCP
+    ip: 0.0.0.0:42083
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+  - name: etc zil  ezil双挖 - ZIL_GETWORK TCP
+    ip: 0.0.0.0:42088    #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: etc zil  ezil双挖 - TCP
+    ip: 0.0.0.0:42108    #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: etc zil  鱼池双挖 - GETWORK TCP
+    ip: 0.0.0.0:42091    #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: etc zil  鱼池双挖 -   TCP
+    ip: 0.0.0.0:42111    #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+  - name: etc zil k1 双挖 - ZIL_GETWORK TCP
+    ip: 0.0.0.0:42092
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: etc zil k1 双挖   - TCP
+    ip: 0.0.0.0:42112
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+# zil
+  - name: ZIL 疯池 - ZIL_GETWORK TCP
+    ip: 0.0.0.0:42240
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: ZIL 疯池 -   TCP
+    ip: 0.0.0.0:42250
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: ZIL k1池 - ZIL_GETWORK TCP
+    ip: 0.0.0.0:42241
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: ZIL k1池 -  TCP
+    ip: 0.0.0.0:42251
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+# rvn
+
+  - name: rvn 2M TCP
+    ip: 0.0.0.0:42140
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: rvn E池 TCP
+    ip: 0.0.0.0:42141
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: rvn 鱼池 TCP
+    ip: 0.0.0.0:42142
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+
+# alph
+  - name: ALPH 英雄 - TCP
+    ip: 0.0.0.0:42420
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: ALPH 毛池 - TCP
+    ip: 0.0.0.0:42421
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+# ergo
+  - name: ERGO 鱼池 - TCP
+    ip: 0.0.0.0:42120
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: ERGO 英雄 - TCP
+    ip: 0.0.0.0:42121
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: ERGO  2miners - TCP
+    ip: 0.0.0.0:42123
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+# nexa
+  - name: NEXA rplant - TCP
+    ip: 0.0.0.0:42360
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: NEXA 毛池 - TCP
+    ip: 0.0.0.0:42361
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+# neox
+  - name: NEOX 2miners - tcp
+    ip: 0.0.0.0:42441
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+
+# xmr
+  - name: XMR nanopool - TCP
+    ip: 0.0.0.0:42160    # 2MINERS
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: XMR 2m - TCP
+    ip: 0.0.0.0:42162    # 2MINERS
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+# flux
+  - name: FLUX 英雄 - TCP
+    ip: 0.0.0.0:42460    #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: FLUX 2m - TCP
+    ip: 0.0.0.0:42461    #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+
+# sero
+  - name: SERO 抽水 - TCP
+    ip: 0.0.0.0:42400    #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+
+# kas
+
+  - name: KAS 毛池 - tcp
+    ip: 0.0.0.0:42181
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: KAS 鱼池 - tcp
+    ip: 0.0.0.0:42182
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+# clore
+  - name: CLORE 抽水 - TCP
+    ip: 0.0.0.0:43000    #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+# tcc
+  - name: TCC 抽水 - TCP
+    ip: 0.0.0.0:43020    #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+# dogewow
+  - name: dogewow - tcp
+    ip: 0.0.0.0:43040    #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+
+
+
+# 专业机
+# hns
+  - name: 鱼池  HNS - TCP
+    ip: 0.0.0.0:40340    #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+# ltc
+  - name: LTC-鱼池-tcp    # tcp
+    ip: 0.0.0.0:40220     #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+# btc
+  - name: BTC-鱼池-tcp    # tcp
+    ip: 0.0.0.0:40200     #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+## GRIN
+  - name: GRIN 2m TCP              #
+    ip: 0.0.0.0:42500      #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+## NOVO
+  - name: NOVO EKA TCP              #
+    ip: 0.0.0.0:43060      #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+#
+#
+# TAFT
+  - name: TAFT rplant TCP              #
+    ip: 0.0.0.0:43080      #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+# PEPEW
+  - name: PEPEW mining4people TCP              #
+    ip: 0.0.0.0:43100      #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+
+# SKYDOGE
+  - name: SKYDOGE 666pool TCP              #
+    ip: 0.0.0.0:43120      #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
+
+# # OCTA
+  - name: OCTA coolpool TCP              #
+    ip: 0.0.0.0:42620      #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
