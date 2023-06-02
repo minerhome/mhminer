@@ -68,9 +68,9 @@ key: key.pem
 
 servers:
 
-  - name: IRON-英雄-ssl
-    ip: 0.0.0.0:17650     # 给客人连接的端口, 前面固定为0.0.0.0
-    ssl: true             # 给客人连接, 一般要开ssl
+  - name: IRON-英雄-tcp
+    ip: 0.0.0.0:42280     # 给客人连接的端口, 前面固定为0.0.0.0
+    ssl: false             # 给客人连接, 一般要开ssl
     coin: IRON            # 币种, 参数上面完成的
     pool: # 实际代理矿池
       ip: hk.ironfish.herominers.com:1145     # 英雄池的iron地址
@@ -81,34 +81,31 @@ servers:
         worker_name: "devfee-1-1"
         fee_percent: 1     # 1%
         address: "你的钱包1"  #  改成你自己的钱包
-      - name: "测试二"
-        worker_name: "devfee-1-2"
-        fee_percent: 2     # 2%
-        address: "你的钱包2"  #  改成你自己的钱包
+        pool:  # 跨池抽
+          ip: iron-asia.f2pool.com:1500
+          ssl: false
 
-
-  - name: KAS-毛池-ssl
-    ip: 0.0.0.0:16510     # 给客人连接的端口, 前面固定为0.0.0.0
+  - name: IRON-英雄-ssl
+    ip: 0.0.0.0:52280     # 给客人连接的端口, 前面固定为0.0.0.0
     ssl: true             # 给客人连接, 一般要开ssl
-    coin: KAS             # 币种, 参数上面完成的
+    coin: IRON            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: pool.sg.woolypooly.com:3112    # 毛池的kas地址
-      ssl: false
-      proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
-    devfee: # 跨池抽到英雄池
+      ip: hk.ironfish.herominers.com:1145     # 英雄池的iron地址
+      ssl: false                
+      proxy: ""                               # 如果安装在国内, 则这里要填上socks5代理
+    devfee: # 同池抽, 可多个抽水钱包
       - name: "测试一"
         worker_name: "devfee-1-1"
         fee_percent: 1     # 1%
         address: "你的钱包1"  #  改成你自己的钱包
-        pool: # 跨池抽到哪
-            ip: hk.kaspa.herominers.com:1206
-            ssl: false               # 矿池一般选择tcp
-            proxy: ""                # 如果安装在国内, 则这里要填上socks5代理:端口
-
+      - name: "测试二"
+        worker_name: "devfee-1-2"
+        fee_percent: 0     # 0表示这个钱包不抽
+        address: "你的钱包2"  #  改成你自己的钱包
 
   - name: 服务端解密 - 鱼池btc
-    encrypt: true        # 服务端解密, 把本地端发来的数据解密再发给矿池
-    ip: 0.0.0.0:14881    # 解密本地端发来的数据, 端口要对应
+    encrypt: true        # 服务端解密, 接收本地端发来的数据解密后再发给矿池
+    ip: 0.0.0.0:50200    # 解密本地端发来的数据, 端口要对应
     coin: BTC
     pool:            
       ip:  btc-asia.f2pool.com:1314  #  鱼池的BTC地址
@@ -118,8 +115,6 @@ servers:
         worker_name: "devfee-1-20230511"
         fee_percent: 1     # 1%
         address: "你的抽水钱包"  # 改成你自己的钱包
-
-
 
 
 ```
