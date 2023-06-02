@@ -4,6 +4,16 @@ hiveos使用一键安装脚本, win则可以直接下载运行.
 
 
 
+&nbsp; hiveos 安装
+```
+bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/inst.sh)
+
+```
+
+
+
+
+
 配置文件 config.yml
 
 ```
