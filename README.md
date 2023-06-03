@@ -19,6 +19,9 @@
 ###  grin pepew novo taft tcc clore skydoge
 ###  btc
 
+### 关于新币, 比如今天新出一个币, octa, 它的算法跟已有的 eth一样, 则在coin中可以填 eth_getwork
+### 同理, 出一个新币叫 argy, 它使用ghostrider, 那我们coin也可以填 taft (它们使用的是同一个算法,则通用)
+
 
 
 ##### 开发者抽水,  千1
