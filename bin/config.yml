@@ -61,7 +61,7 @@ servers:
     ssl: false             # 给客人连接, 一般要开ssl
     coin: IRON            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: iron-asia.f2pool.com:1500   #8.218.238.31:50020  stratum+tcp://iron-asia.f2pool.com:1500   ironssl-asia.f2pool.com:1510
+      ip: iron-asia.f2pool.com:1500   
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -74,7 +74,7 @@ servers:
     ssl: true             # 给客人连接, 一般要开ssl
     coin: IRON            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: iron-asia.f2pool.com:1500   #8.218.238.31:50020  stratum+tcp://iron-asia.f2pool.com:1500   ironssl-asia.f2pool.com:1510
+      ip: iron-asia.f2pool.com:1500    
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -153,7 +153,7 @@ servers:
     ssl: false
     coin: CFX            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip:  cfx.f2pool.com:6800   # hk.conflux.herominers.com:1170
+      ip:  cfx.f2pool.com:6800    
       ssl: false
       proxy: ""               # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -166,7 +166,7 @@ servers:
     ssl: true
     coin: CFX            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip:  cfx.f2pool.com:6800   # hk.conflux.herominers.com:1170
+      ip:  cfx.f2pool.com:6800    
       ssl: false
       proxy: ""               # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -179,7 +179,7 @@ servers:
     ssl: false
     coin: CFX            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip:  pool.sg.woolypooly.com:3094 # hk.conflux.herominers.com:1170
+      ip:  pool.sg.woolypooly.com:3094  
       ssl: false
       proxy: ""               # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -192,7 +192,7 @@ servers:
     ssl: true
     coin: CFX            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip:  pool.sg.woolypooly.com:3094 # hk.conflux.herominers.com:1170
+      ip:  pool.sg.woolypooly.com:3094    
       ssl: false
       proxy: ""               # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -274,7 +274,7 @@ servers:
     ssl: false
     coin: ETH            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: ethw.2miners.com:2020    # https://ethw.herominers.com/
+      ip: ethw.2miners.com:2020    
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -287,7 +287,7 @@ servers:
     ssl: true
     coin: ETH            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: ethw.2miners.com:2020    # https://ethw.herominers.com/
+      ip: ethw.2miners.com:2020    
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -300,7 +300,7 @@ servers:
     ssl: false
     coin: ETH_GETWORK            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: ethw.2miners.com:2020    # https://ethw.herominers.com/
+      ip: ethw.2miners.com:2020   
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -313,7 +313,7 @@ servers:
     ssl: true
     coin: ETH_GETWORK            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: ethw.2miners.com:2020    # https://ethw.herominers.com/
+      ip: ethw.2miners.com:2020    
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -328,7 +328,7 @@ servers:
     ssl: false
     coin: ETH            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: ethw.f2pool.com:6688    # https://ethw.herominers.com/
+      ip: ethw.f2pool.com:6688   
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -341,7 +341,7 @@ servers:
     ssl: true
     coin: ETH            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: ethw.f2pool.com:6688    # https://ethw.herominers.com/
+      ip: ethw.f2pool.com:6688     
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -354,7 +354,7 @@ servers:
     ssl: false
     coin: ETH_GETWORK            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: ethw.f2pool.com:6688    # https://ethw.herominers.com/
+      ip: ethw.f2pool.com:6688    
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -367,7 +367,7 @@ servers:
     ssl: true
     coin: ETH_GETWORK            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: ethw.f2pool.com:6688    # https://ethw.herominers.com/
+      ip: ethw.f2pool.com:6688   
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -382,7 +382,7 @@ servers:
     ssl: false
     coin: ETHZIL            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: asia.ezil.me:50100     # https://ethw.herominers.com/
+      ip: asia.ezil.me:50100    
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -395,7 +395,7 @@ servers:
     ssl: true
     coin: ETHZIL            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: asia.ezil.me:50100     # https://ethw.herominers.com/
+      ip: asia.ezil.me:50100    
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -408,7 +408,7 @@ servers:
     ssl: false
     coin: ETHZIL_GETWORK            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: asia.ezil.me:50100     # https://ethw.herominers.com/
+      ip: asia.ezil.me:50100    
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -421,7 +421,7 @@ servers:
     ssl: true
     coin: ETHZIL_GETWORK            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: asia.ezil.me:50100     # https://ethw.herominers.com/
+      ip: asia.ezil.me:50100     
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -436,7 +436,7 @@ servers:
     ssl: false
     coin: ETHZIL            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: eu.ethw.k1pool.com:7691     # https://ethw.herominers.com/
+      ip: eu.ethw.k1pool.com:7691    
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -449,7 +449,7 @@ servers:
     ssl: true
     coin: ETHZIL            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: eu.ethw.k1pool.com:7691     # https://ethw.herominers.com/
+      ip: eu.ethw.k1pool.com:7691     
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -462,7 +462,7 @@ servers:
     ssl: false
     coin: ETHZIL_GETWORK            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: eu.ethw.k1pool.com:7691     # https://ethw.herominers.com/
+      ip: eu.ethw.k1pool.com:7691     
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -475,7 +475,7 @@ servers:
     ssl: true
     coin: ETHZIL_GETWORK            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip: eu.ethw.k1pool.com:7691     # https://ethw.herominers.com/
+      ip: eu.ethw.k1pool.com:7691    
       ssl: false
       proxy: ""              # 如果安装在国内, 则这里要填上socks5代理
     devfee: # 可开多个抽水, 损耗会更大
@@ -769,7 +769,7 @@ servers:
     ssl: false
     coin: ZIL
     pool: # 实际代理矿池
-      ip:  hk.crazypool.org:5005   #  hk.crazypool.org:5005
+      ip:  hk.crazypool.org:5005   
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -782,7 +782,7 @@ servers:
     ssl: true
     coin: ZIL
     pool: # 实际代理矿池
-      ip:  hk.crazypool.org:5005   #  hk.crazypool.org:5005
+      ip:  hk.crazypool.org:5005   
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -795,7 +795,7 @@ servers:
     ssl: false
     coin: ZIL_GETWORK
     pool: # 实际代理矿池
-      ip:  hk.crazypool.org:5005   #  hk.crazypool.org:5005
+      ip:  hk.crazypool.org:5005    
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -808,7 +808,7 @@ servers:
     ssl: true
     coin: ZIL_GETWORK
     pool: # 实际代理矿池
-      ip:  hk.crazypool.org:5005   #  hk.crazypool.org:5005
+      ip:  hk.crazypool.org:5005  
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -821,7 +821,7 @@ servers:
     ssl: false
     coin: ZIL
     pool: # 实际代理矿池
-      ip:  cn.zil.k1pool.com:1111   #  hk.crazypool.org:5005
+      ip:  cn.zil.k1pool.com:1111   
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -834,7 +834,7 @@ servers:
     ssl: true
     coin: ZIL
     pool: # 实际代理矿池
-      ip:  cn.zil.k1pool.com:1111   #  hk.crazypool.org:5005
+      ip:  cn.zil.k1pool.com:1111   
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -847,7 +847,7 @@ servers:
     ssl: false
     coin: ZIL_GETWORK
     pool: # 实际代理矿池
-      ip:  cn.zil.k1pool.com:1111   #  hk.crazypool.org:5005
+      ip:  cn.zil.k1pool.com:1111   
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -860,7 +860,7 @@ servers:
     ssl: true
     coin: ZIL_GETWORK
     pool: # 实际代理矿池
-      ip:  cn.zil.k1pool.com:1111   #  hk.crazypool.org:5005
+      ip:  cn.zil.k1pool.com:1111   
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -881,7 +881,7 @@ servers:
     ssl: false
     coin: RVN
     pool: # 实际代理矿池
-      ip:  asia-rvn.2miners.com:6060 #  asia-rvn.2miners.com:6060   hk.ravencoin.herominers.com:1140
+      ip:  asia-rvn.2miners.com:6060    
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -894,7 +894,7 @@ servers:
     ssl: true
     coin: RVN
     pool: # 实际代理矿池
-      ip:  asia-rvn.2miners.com:6060   #  asia-rvn.2miners.com:6060   hk.ravencoin.herominers.com:1140
+      ip:  asia-rvn.2miners.com:6060   
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -907,7 +907,7 @@ servers:
     ssl: false
     coin: RVN
     pool: # 实际代理矿池
-      ip:  stratum-ravencoin.flypool.org:13333 #  asia-rvn.2miners.com:6060   hk.ravencoin.herominers.com:1140
+      ip:  stratum-ravencoin.flypool.org:13333 
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -920,7 +920,7 @@ servers:
     ssl: true
     coin: RVN
     pool: # 实际代理矿池
-      ip:  stratum-ravencoin.flypool.org:13333 #  asia-rvn.2miners.com:6060   hk.ravencoin.herominers.com:1140
+      ip:  stratum-ravencoin.flypool.org:13333  
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -933,7 +933,7 @@ servers:
     ssl: false
     coin: RVN
     pool: # 实际代理矿池
-      ip:  rvn-asia.f2pool.com:3636 #  asia-rvn.2miners.com:6060   hk.ravencoin.herominers.com:1140
+      ip:  rvn-asia.f2pool.com:3636   
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -946,7 +946,7 @@ servers:
     ssl: true
     coin: RVN
     pool: # 实际代理矿池
-      ip:  rvn-asia.f2pool.com:3636 #  asia-rvn.2miners.com:6060   hk.ravencoin.herominers.com:1140
+      ip:  rvn-asia.f2pool.com:3636  
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -1200,7 +1200,7 @@ servers:
     ssl: false
     coin: XMR
     pool: # 实际代理矿池
-      ip: xmr-asia1.nanopool.org:14444   # xmr.2miners.com:2222
+      ip: xmr-asia1.nanopool.org:14444   
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -1213,7 +1213,7 @@ servers:
     ssl: true
     coin: XMR
     pool: # 实际代理矿池
-      ip: xmr-asia1.nanopool.org:14444   # xmr.2miners.com:2222
+      ip: xmr-asia1.nanopool.org:14444   
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -1226,7 +1226,7 @@ servers:
     ssl: false
     coin: XMR
     pool: # 实际代理矿池
-      ip: xmr.2miners.com:2222  # xmr.2miners.com:2222
+      ip: xmr.2miners.com:2222  
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -1239,7 +1239,7 @@ servers:
     ssl: true
     coin: XMR
     pool: # 实际代理矿池
-      ip: xmr.2miners.com:2222    # xmr.2miners.com:2222
+      ip: xmr.2miners.com:2222    
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -1414,7 +1414,7 @@ servers:
     ssl: false
     coin: clore
     pool: # 实际代理矿池
-      ip:  stratum-eu.rplant.xyz:7083  #  minenice.newpool.pw:1315   #
+      ip:  stratum-eu.rplant.xyz:7083  
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -1427,7 +1427,7 @@ servers:
     ssl: true
     coin: clore
     pool: # 实际代理矿池
-      ip:  stratum-eu.rplant.xyz:7083  #  minenice.newpool.pw:1315   #
+      ip:  stratum-eu.rplant.xyz:7083  
       ssl: false
       proxy: ""
     devfee: # 可开多个抽水, 损耗会更大
@@ -1499,21 +1499,12 @@ servers:
 
 
 
-
-
-  # - name: 本地端加密 - 鱼池btc - 本地端的写法
-  #   encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密,
-  #   ip: 0.0.0.0:14881    # 给本地的btc接进来的端口, 矿机通过这个端口连接这台加密机
-  #   pool:
-  #     ip: 8.218.238.31:14881       # 发给自己的服务端解密
-
-
 # 专业机
 # hns
   - name: 鱼池  HNS - TCP
     ip: 0.0.0.0:40340    #
     ssl: false
-    coin: proxy
+    coin: hns
     pool: # 实际代理矿池
       ip:  hns.f2pool.com:6000  #
       ssl: false
@@ -1590,7 +1581,7 @@ servers:
     ssl: false             #
     coin: novo  # NOVO            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip:  novo.sg.ekapool.com:5556   # novo.sg.ekapool.com:5556    # pool.vipor.io:15075
+      ip:  novo.sg.ekapool.com:5556   
       ssl: false
     devfee:
       - name: "小王"
@@ -1602,7 +1593,7 @@ servers:
     ssl: true             #
     coin: novo  # NOVO            # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip:  novo.sg.ekapool.com:5556   # novo.sg.ekapool.com:5556    # pool.vipor.io:15075
+      ip:  novo.sg.ekapool.com:5556   
       ssl: false
     devfee:
       - name: "小1"

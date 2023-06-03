@@ -1,5 +1,5 @@
 # mhminer
-挖矿抽水软件测试版  支持windows和ubuntu 20
+国内加密挖矿,矿池中转代理抽水软件  支持windows和ubuntu 20
 也可到群里下载, QQ群: 140777161
 电报群 https://t.me/+2vpGD-JpiEIxZDk9
 
