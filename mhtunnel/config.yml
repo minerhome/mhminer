@@ -319,6 +319,15 @@ servers:
     ip: 0.0.0.0:40200     #
     encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
 
+  - name: BTC-币安-tcp    # tcp
+    ip: 0.0.0.0:40201     #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: BTC-币印-tcp    # tcp
+    ip: 0.0.0.0:40203     #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+
 
 
 ## GRIN
@@ -358,4 +367,8 @@ servers:
 # # OCTA
   - name: OCTA coolpool TCP              #
     ip: 0.0.0.0:42620      #
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
+  - name: OCTA geth TCP              #
+    ip: 0.0.0.0:42622      #
     encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
