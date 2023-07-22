@@ -485,38 +485,7 @@ servers:
         address: "KrRHKCQK7EBkda61T5ohKSRnNCsXfz4hWMj"
 
 
-
-
-
-
 # etc
-
-  - name: etc E池 TCP
-    ip: 0.0.0.0:42080
-    ssl: false
-    coin: ETC
-    pool: # 实际代理矿池
-      ip: asia1-etc.ethermine.org:14444
-      ssl: false
-      proxy: ""
-    devfee: # 可开多个抽水, 损耗会更大
-      - name: 同学
-        worker_name: "devfee1"
-        fee_percent: 2     # 1%
-        address: "0xe8b44b9acbc24048c390e73050cd8319b48f0e89"  # 改成你自己的钱包
-  - name: etc E池 SSL
-    ip: 0.0.0.0:52080
-    ssl: true
-    coin: ETC
-    pool: # 实际代理矿池
-      ip: asia1-etc.ethermine.org:14444
-      ssl: false
-      proxy: ""
-    devfee: # 可开多个抽水, 损耗会更大
-      - name: 同学
-        worker_name: "devfee1"
-        fee_percent: 2     # 1%
-        address: "0xe8b44b9acbc24048c390e73050cd8319b48f0e89"  # 改成你自己的钱包
   - name: etc 鱼池 TCP
     ip: 0.0.0.0:42081
     ssl: false
@@ -902,32 +871,7 @@ servers:
         worker_name: "devfee1"
         fee_percent: 2     # 1%
         address: "RD7FBHEf3TZKrmWVsYC4N5kDYL4Fh1G515"  # 改成你自己的钱包
-  - name: rvn E池 TCP
-    ip: 0.0.0.0:42141
-    ssl: false
-    coin: RVN
-    pool: # 实际代理矿池
-      ip:  stratum-ravencoin.flypool.org:13333 
-      ssl: false
-      proxy: ""
-    devfee: # 可开多个抽水, 损耗会更大
-      - name: 同学
-        worker_name: "devfee1"
-        fee_percent: 2     # 1%
-        address: "RD7FBHEf3TZKrmWVsYC4N5kDYL4Fh1G515"  # 改成你自己的钱包
-  - name: rvn E池 SSL
-    ip: 0.0.0.0:52141
-    ssl: true
-    coin: RVN
-    pool: # 实际代理矿池
-      ip:  stratum-ravencoin.flypool.org:13333  
-      ssl: false
-      proxy: ""
-    devfee: # 可开多个抽水, 损耗会更大
-      - name: 同学
-        worker_name: "devfee1"
-        fee_percent: 2     # 1%
-        address: "RD7FBHEf3TZKrmWVsYC4N5kDYL4Fh1G515"  # 改成你自己的钱包
+
   - name: rvn 鱼池 TCP
     ip: 0.0.0.0:42142
     ssl: false
@@ -954,7 +898,6 @@ servers:
         worker_name: "devfee1"
         fee_percent: 2     # 1%
         address: "viponedream"  # 改成你自己的钱包
-
 
 
 
