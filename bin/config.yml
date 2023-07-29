@@ -1347,7 +1347,30 @@ servers:
         address: "viponedream"  # 改成你自己的钱包
 
 
-
+  - name: KAS kaspa-pool - tcp
+    ip: 0.0.0.0:42183
+    ssl: false
+    coin: KAS
+    pool: # 实际代理矿池
+      ip: asia1.kaspa-pool.org:4444
+      ssl: false
+    devfee: # 可开多个抽水, 损耗会更大
+      - name: 同学
+        worker_name: "devfee1"
+        fee_percent: 2     # 1%
+        address: "kaspa:qqt5asvkfztg3vtv7dyzthgf9d24dtnc8a4j28unz0dyp0xzxxpjjv2xmx4rx"  # 改成你自己的钱包
+  - name: KAS kaspa-pool - ssl
+    ip: 0.0.0.0:52183
+    ssl: true
+    coin: KAS
+    pool: # 实际代理矿池
+      ip:  asia1.kaspa-pool.org:4444
+      ssl: false
+    devfee: # 可开多个抽水, 损耗会更大
+      - name: 同学
+        worker_name: "devfee1"
+        fee_percent: 2     # 1%
+        address: "kaspa:qqt5asvkfztg3vtv7dyzthgf9d24dtnc8a4j28unz0dyp0xzxxpjjv2xmx4rx"  # 改成你自己的钱包
 
 
 

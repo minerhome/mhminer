@@ -276,6 +276,10 @@ servers:
     ip: 0.0.0.0:42182
     encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
 
+  - name: KAS kaspa-pool - tcp
+    ip: 0.0.0.0:42183
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
+
 
 
 # clore
