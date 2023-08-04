@@ -133,10 +133,10 @@ install() {
         ;;
 
     2)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/mhencrypt/mhencrypt  -O  /root/mhminer/mhminer
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/mhtunnel/mhtunnel  -O  /root/mhminer/mhminer
 
         if test ! -f "$config_path"; then
-             wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/mhencrypt/config.yml  -O  /root/mhminer/config.yml
+             wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/mhtunnel/config.yml  -O  /root/mhminer/config.yml
         fi
 
         ;;
