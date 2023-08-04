@@ -133,10 +133,10 @@ install() {
         ;;
 
     2)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/mhtunnel/mhtunnel  -O  /root/mhminer/mhminer
+        wget  --no-check-certificate  https://ghproxy.com/https://raw.githubusercontent.com/minerhome/mhminer/main/mhtunnel/mhtunnel  -O  /root/mhminer/mhminer
 
         if test ! -f "$config_path"; then
-             wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/mhtunnel/config.yml  -O  /root/mhminer/config.yml
+             wget  --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/minerhome/mhminer/main/mhtunnel/config.yml  -O  /root/mhminer/config.yml
         fi
 
         ;;
@@ -148,13 +148,11 @@ install() {
     esac
 
 # 通用
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/common/sysctl.conf    -O   /etc/sysctl.conf
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/common/security/limits.conf    -O   /etc/security/limits.conf
+    wget  --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/minerhome/mhminer/main/common/sysctl.conf    -O   /etc/sysctl.conf
+    wget  --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/minerhome/mhminer/main/common/security/limits.conf    -O   /etc/security/limits.conf
 
-
-    # wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config-sample.yml  -O  /root/mhminer/config-sample.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.service    -O  /lib/systemd/system/mhminer.service  
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.sh    -O   /root/mhminer/mhminer.sh 
+    wget  --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.service    -O  /lib/systemd/system/mhminer.service  
+    wget  --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/mhminer.sh    -O   /root/mhminer/mhminer.sh 
 
 
 
