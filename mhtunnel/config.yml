@@ -4,6 +4,7 @@
 
 
 
+global_proxy: ""        # 通用代理, 如果矿池没有设置代理则使用这个代理    如"127.0.0.1:2333"
 global_ip: ""           # 本地加密端专用, 指定专线ip, 否则走公用服务器
 
 
@@ -111,9 +112,6 @@ servers:
 
 # etc
 
-  - name: etc E池 TCP
-    ip: 0.0.0.0:42080
-    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
 
   - name: etc 鱼池 TCP  GETWORK
     ip: 0.0.0.0:42081
@@ -175,20 +173,17 @@ servers:
 
 
 # rvn
-
   - name: rvn 2M TCP
     ip: 0.0.0.0:42140
-    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
-
-  - name: rvn E池 TCP
-    ip: 0.0.0.0:42141
     encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
 
   - name: rvn 鱼池 TCP
     ip: 0.0.0.0:42142
     encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
 
-
+  - name: rvn 币安 TCP
+    ip: 0.0.0.0:42145
+    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
 
 
 # alph
@@ -323,15 +318,6 @@ servers:
     ip: 0.0.0.0:40200     #
     encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
 
-  - name: BTC-币安-tcp    # tcp
-    ip: 0.0.0.0:40201     #
-    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
-
-  - name: BTC-币印-tcp    # tcp
-    ip: 0.0.0.0:40203     #
-    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
-
-
 
 
 ## GRIN
@@ -371,8 +357,4 @@ servers:
 # # OCTA
   - name: OCTA coolpool TCP              #
     ip: 0.0.0.0:42620      #
-    encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
-
-  - name: OCTA geth TCP              #
-    ip: 0.0.0.0:42622      #
     encrypt: true        # 是否使用加密, 本地端表示加密, 服务端表示解密, 服务端只接收加密数据
