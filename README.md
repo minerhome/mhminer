@@ -37,7 +37,9 @@
 
 &nbsp; 香港服务器上执行一键安装脚本 (ubuntu20)
 ```
-bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/inst.sh)
+
+bash <(curl -s -L https://ghproxy.com/https://raw.githubusercontent.com/minerhome/mhminer/main/scripts/inst.sh)
+
 
 ```
 
