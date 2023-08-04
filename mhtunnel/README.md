@@ -1,4 +1,4 @@
-# mhencrypt  本地加密
+# mhtunnel  本地加密
 要跟 mhminer配合使用, 本地加密之后发往mhminer服务器解密. 针对专业机, 如btc, ltc等专业机.
 hiveos使用一键安装脚本, win则可以直接下载运行.
 
