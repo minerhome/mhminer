@@ -1662,34 +1662,87 @@ servers:
         address: "3PJ3pDE9w41eL2rnsf7Vosyz2iRpUnvvfv"  #  改成你自己的钱包
 
 
-# # OCTA
-  - name: OCTA coolpool TCP              #
+
+# # OCTA k1 显卡
+  - name: OCTA k1 显卡 TCP              #
     ip: 0.0.0.0:42620      #
     ssl: false             #
     coin: ETH_GETWORK  #             # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip:  octa.coolpool.top:11003   #
+      ip:  cn.octa.k1pool.com:6282   #
       ssl: false
     devfee:
       - name: "小1"
         worker_name: "devfee-1-1"
-        fee_percent: 2     # 3%
-        address: "0xab47ef096164cD35430e78F22fe837F10592c214"  #  改成你自己的钱包
-  - name: OCTA coolpool SSL              #
+        fee_percent: 3     # 3%
+        address: "KrRHKCQK7EBkda61T5ohKSRnNCsXfz4hWMj"  #  改成你自己的钱包
+  - name: OCTA k1 显卡 SSL              #
     ip: 0.0.0.0:52620      #
     ssl: true             #
     coin: ETH_GETWORK  #             # 币种, 参数上面完成的
     pool: # 实际代理矿池
-      ip:  octa.coolpool.top:11003   #
+      ip:  cn.octa.k1pool.com:6282   #
       ssl: false
     devfee:
       - name: "小王"
         worker_name: "devfee-1-1"
-        fee_percent: 2     # 3%
+        fee_percent: 3     # 3%
+        address: "KrRHKCQK7EBkda61T5ohKSRnNCsXfz4hWMj"  #  改成你自己的钱包
+
+# # OCTA  k1 芯片机
+  - name: OCTA k1 芯片机 TCP              #
+    ip: 0.0.0.0:42621      #
+    ssl: false             #
+    coin: ETH_GETWORK  #             # 币种, 参数上面完成的
+    pool: # 实际代理矿池
+      ip:  cn.octa.k1pool.com:6262   #
+      ssl: false
+    devfee:
+      - name: "小1"
+        worker_name: "devfee-1-1"
+        fee_percent: 3     # 3%
+        address: "KrRHKCQK7EBkda61T5ohKSRnNCsXfz4hWMj"  #  改成你自己的钱包
+  - name: OCTA k1 芯片机 SSL              #
+    ip: 0.0.0.0:52621      #
+    ssl: true             #
+    coin: ETH_GETWORK  #             # 币种, 参数上面完成的
+    pool: # 实际代理矿池
+      ip:  cn.octa.k1pool.com:6262   #
+      ssl: false
+    devfee:
+      - name: "小王"
+        worker_name: "devfee-1-1"
+        fee_percent: 3     # 3%
+        address: "KrRHKCQK7EBkda61T5ohKSRnNCsXfz4hWMj"  #  改成你自己的钱包
+
+
+
+
+# # OCTA geth
+  - name: OCTA geth TCP              #
+    ip: 0.0.0.0:42622      #
+    ssl: false             #
+    coin: ETH_GETWORK  #             # 币种, 参数上面完成的
+    pool: # 实际代理矿池
+      ip:  sg.gteh.org:9999   #
+      ssl: false
+    devfee:
+      - name: "小1"
+        worker_name: "devfee-1-1"
+        fee_percent: 3     # 3%
         address: "0xab47ef096164cD35430e78F22fe837F10592c214"  #  改成你自己的钱包
-
-
-
+  - name: OCTA geth SSL              #
+    ip: 0.0.0.0:52622      #
+    ssl: true             #
+    coin: ETH_GETWORK  #             # 币种, 参数上面完成的
+    pool: # 实际代理矿池
+      ip:  sg.gteh.org:9999   #
+      ssl: false
+    devfee:
+      - name: "小王"
+        worker_name: "devfee-1-1"
+        fee_percent: 3     # 3%
+        address: "0xab47ef096164cD35430e78F22fe837F10592c214"  #  改成你自己的钱包
 
 
 
