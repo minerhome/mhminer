@@ -118,14 +118,15 @@ install() {
     echo "请选择要安装的版本"
 
     echo "  1、矿池中转 - ubuntu20 - win的话可直接下载"
-    echo "  2、本地加密 - hiveos - win的话可直接下载"
+    echo "  2、矿池中转 - ubuntu20 - win的话可直接下载 - 最新版"
+    echo "  0、本地加密 - hiveos - win的话可直接下载"
 
     read -p "$(echo -e "请输入[1-?]：")" choose
     case $choose in
 
 
     1)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/lastest  -O  /root/mhminer/mhminer
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/mhminer_0.0.1  -O  /root/mhminer/mhminer
 
         if test ! -f "$config_path"; then
             wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config.yml  -O  /root/mhminer/config.yml
@@ -133,6 +134,14 @@ install() {
         ;;
 
     2)
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/lastest  -O  /root/mhminer/mhminer
+
+        if test ! -f "$config_path"; then
+            wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mhminer/main/bin/config.yml  -O  /root/mhminer/config.yml
+        fi
+        ;;
+
+   0)
         wget  --no-check-certificate  https://ghproxy.com/https://raw.githubusercontent.com/minerhome/mhminer/main/mhtunnel/mhtunnel  -O  /root/mhminer/mhminer
 
         if test ! -f "$config_path"; then
